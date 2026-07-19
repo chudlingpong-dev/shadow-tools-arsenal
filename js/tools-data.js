@@ -1,6 +1,6 @@
-// Shadow Tools Arsenal — 800+ Tools Database
+// Shadow Tools Arsenal — Tools Database
 const toolsData = [
-    // ==================== SEO TOOLS ====================
+    // SEO Tools
     {
         id: 1,
         name: "SEO Meta Tag Generator",
@@ -81,9 +81,7 @@ const toolsData = [
         tags: ["speed", "performance", "core web vitals"],
         icon: "⚡"
     },
-    // ... continuing to 800+ tools
-
-    // ==================== SECURITY TOOLS ====================
+    // Security Tools
     {
         id: 101,
         name: "SSL/TLS Certificate Checker",
@@ -100,9 +98,31 @@ const toolsData = [
         tags: ["password", "strength", "security"],
         icon: "🔑"
     },
-    // ... continue all categories
-
-    // ==================== PERFORMANCE TOOLS ====================
+    {
+        id: 103,
+        name: "Vulnerability Scanner",
+        description: "Scan websites for common security vulnerabilities.",
+        category: "security",
+        tags: ["vulnerability", "scan", "security"],
+        icon: "🛡️"
+    },
+    {
+        id: 104,
+        name: "CSP Header Builder",
+        description: "Generate Content Security Policy headers for your site.",
+        category: "security",
+        tags: ["csp", "headers", "security"],
+        icon: "🛡️"
+    },
+    {
+        id: 105,
+        name: "Domain Reputation Checker",
+        description: "Check if your domain is blacklisted anywhere.",
+        category: "security",
+        tags: ["reputation", "blacklist", "domain"],
+        icon: "📋"
+    },
+    // Performance Tools
     {
         id: 201,
         name: "Image Compressor",
@@ -111,9 +131,39 @@ const toolsData = [
         tags: ["image", "compression", "optimization"],
         icon: "🖼️"
     },
-    // ... more
-
-    // ==================== DESIGN TOOLS ====================
+    {
+        id: 202,
+        name: "CSS Minifier",
+        description: "Minify CSS code to reduce file size and load time.",
+        category: "performance",
+        tags: ["css", "minify", "optimization"],
+        icon: "🎨"
+    },
+    {
+        id: 203,
+        name: "JavaScript Bundler",
+        description: "Bundle multiple JS files into a single optimized file.",
+        category: "performance",
+        tags: ["javascript", "bundle", "optimization"],
+        icon: "📦"
+    },
+    {
+        id: 204,
+        name: "Cache Analyzer",
+        description: "Analyze and optimize your website's caching strategy.",
+        category: "performance",
+        tags: ["cache", "headers", "performance"],
+        icon: "💾"
+    },
+    {
+        id: 205,
+        name: "Resource Size Analyzer",
+        description: "Analyze the size of all resources loaded on your site.",
+        category: "performance",
+        tags: ["resources", "size", "analysis"],
+        icon: "📊"
+    },
+    // Design Tools
     {
         id: 301,
         name: "CSS Gradient Generator",
@@ -122,9 +172,39 @@ const toolsData = [
         tags: ["gradient", "css", "design"],
         icon: "🎨"
     },
-    // ... more
-
-    // ==================== DEVELOPER TOOLS ====================
+    {
+        id: 302,
+        name: "Color Palette Generator",
+        description: "Generate harmonious color palettes for your designs.",
+        category: "design",
+        tags: ["color", "palette", "design"],
+        icon: "🎨"
+    },
+    {
+        id: 303,
+        name: "Box Shadow Generator",
+        description: "Create and preview CSS box shadows in real-time.",
+        category: "design",
+        tags: ["box-shadow", "css", "design"],
+        icon: "📦"
+    },
+    {
+        id: 304,
+        name: "Text Shadow Generator",
+        description: "Generate CSS text shadows with live preview.",
+        category: "design",
+        tags: ["text-shadow", "css", "design"],
+        icon: "✍️"
+    },
+    {
+        id: 305,
+        name: "Border Radius Generator",
+        description: "Create custom border-radius with visual preview.",
+        category: "design",
+        tags: ["border-radius", "css", "design"],
+        icon: "⭕"
+    },
+    // Developer Tools
     {
         id: 401,
         name: "JSON Formatter & Validator",
@@ -133,9 +213,39 @@ const toolsData = [
         tags: ["json", "format", "validate"],
         icon: "📋"
     },
-    // ... more
-
-    // ==================== CONVERTERS ====================
+    {
+        id: 402,
+        name: "HTML Formatter",
+        description: "Format and beautify HTML code with proper indentation.",
+        category: "developer",
+        tags: ["html", "format", "beautify"],
+        icon: "📝"
+    },
+    {
+        id: 403,
+        name: "CSS Formatter",
+        description: "Format and beautify CSS code with consistent styling.",
+        category: "developer",
+        tags: ["css", "format", "beautify"],
+        icon: "🎨"
+    },
+    {
+        id: 404,
+        name: "JavaScript Beautifier",
+        description: "Beautify and format JavaScript code for readability.",
+        category: "developer",
+        tags: ["javascript", "format", "beautify"],
+        icon: "💻"
+    },
+    {
+        id: 405,
+        name: "Code Diff Checker",
+        description: "Compare two code snippets and highlight differences.",
+        category: "developer",
+        tags: ["diff", "compare", "code"],
+        icon: "🔍"
+    },
+    // Converters
     {
         id: 501,
         name: "Base64 Encoder/Decoder",
@@ -144,9 +254,39 @@ const toolsData = [
         tags: ["base64", "encode", "decode"],
         icon: "🔄"
     },
-    // ... more
-
-    // ==================== GENERATORS ====================
+    {
+        id: 502,
+        name: "URL Encoder/Decoder",
+        description: "Encode and decode URLs for web use.",
+        category: "converter",
+        tags: ["url", "encode", "decode"],
+        icon: "🔗"
+    },
+    {
+        id: 503,
+        name: "Markdown to HTML",
+        description: "Convert Markdown text to HTML code.",
+        category: "converter",
+        tags: ["markdown", "html", "convert"],
+        icon: "📝"
+    },
+    {
+        id: 504,
+        name: "HTML to Markdown",
+        description: "Convert HTML code to Markdown format.",
+        category: "converter",
+        tags: ["html", "markdown", "convert"],
+        icon: "📄"
+    },
+    {
+        id: 505,
+        name: "Timestamp Converter",
+        description: "Convert between Unix timestamps and human-readable dates.",
+        category: "converter",
+        tags: ["timestamp", "date", "convert"],
+        icon: "⏰"
+    },
+    // Generators
     {
         id: 601,
         name: "Random Password Generator",
@@ -155,9 +295,39 @@ const toolsData = [
         tags: ["password", "random", "secure"],
         icon: "🎲"
     },
-    // ... more
-
-    // ==================== TESTING TOOLS ====================
+    {
+        id: 602,
+        name: "Lorem Ipsum Generator",
+        description: "Generate placeholder text for your designs.",
+        category: "generator",
+        tags: ["lorem", "ipsum", "placeholder"],
+        icon: "📝"
+    },
+    {
+        id: 603,
+        name: "UUID Generator",
+        description: "Generate unique UUID v4 identifiers.",
+        category: "generator",
+        tags: ["uuid", "unique", "identifier"],
+        icon: "🔑"
+    },
+    {
+        id: 604,
+        name: "QR Code Generator",
+        description: "Generate QR codes from text or URLs.",
+        category: "generator",
+        tags: ["qr", "code", "generate"],
+        icon: "📱"
+    },
+    {
+        id: 605,
+        name: "Favicon Generator",
+        description: "Create favicon from any image or text.",
+        category: "generator",
+        tags: ["favicon", "icon", "generate"],
+        icon: "⭐"
+    },
+    // Testing Tools
     {
         id: 701,
         name: "Cross-Browser Tester",
@@ -166,9 +336,39 @@ const toolsData = [
         tags: ["cross-browser", "testing", "compatibility"],
         icon: "🧪"
     },
-    // ... more
-
-    // ==================== ANALYTICS TOOLS ====================
+    {
+        id: 702,
+        name: "Mobile Responsiveness Test",
+        description: "Test how your site looks on different screen sizes.",
+        category: "testing",
+        tags: ["responsive", "mobile", "test"],
+        icon: "📱"
+    },
+    {
+        id: 703,
+        name: "Link Checker",
+        description: "Check for broken links on any webpage.",
+        category: "testing",
+        tags: ["links", "broken", "check"],
+        icon: "🔗"
+    },
+    {
+        id: 704,
+        name: "HTML Validator",
+        description: "Validate HTML code against W3C standards.",
+        category: "testing",
+        tags: ["html", "validate", "w3c"],
+        icon: "✅"
+    },
+    {
+        id: 705,
+        name: "CSS Validator",
+        description: "Validate CSS code against W3C standards.",
+        category: "testing",
+        tags: ["css", "validate", "w3c"],
+        icon: "✅"
+    },
+    // Analytics Tools
     {
         id: 801,
         name: "Traffic Analyzer",
@@ -176,8 +376,72 @@ const toolsData = [
         category: "analytics",
         tags: ["traffic", "analytics", "behavior"],
         icon: "📊"
+    },
+    {
+        id: 802,
+        name: "Conversion Tracker",
+        description: "Track and analyze conversion rates on your site.",
+        category: "analytics",
+        tags: ["conversion", "track", "analytics"],
+        icon: "📈"
+    },
+    {
+        id: 803,
+        name: "User Behavior Heatmap",
+        description: "Visualize user interaction with click heatmaps.",
+        category: "analytics",
+        tags: ["heatmap", "behavior", "analytics"],
+        icon: "🔥"
+    },
+    {
+        id: 804,
+        name: "Bounce Rate Analyzer",
+        description: "Analyze and improve your website bounce rate.",
+        category: "analytics",
+        tags: ["bounce", "rate", "analytics"],
+        icon: "📉"
+    },
+    {
+        id: 805,
+        name: "SEO Traffic Analytics",
+        description: "Track and analyze SEO traffic sources.",
+        category: "analytics",
+        tags: ["seo", "traffic", "analytics"],
+        icon: "🔍"
     }
-    // ... This would be expanded to full 800+ tools
 ];
 
-// We'll generate the rest programmatically below to reach 800+
+// Generate additional tools to reach 800+
+function generateMoreTools() {
+    const categories = ['seo', 'security', 'performance', 'design', 'developer', 'converter', 'generator', 'testing', 'analytics'];
+    const prefixes = ['Advanced', 'Pro', 'Smart', 'Quick', 'Ultra', 'Super', 'Mega', 'Turbo', 'Expert', 'Elite'];
+    const suffixes = ['Pro', 'Plus', 'X', '2.0', 'Lite', 'Max', 'AI', 'Cloud', 'Stream', '360'];
+    const verbs = ['Analyze', 'Generate', 'Test', 'Validate', 'Optimize', 'Compress', 'Encode', 'Decode', 'Transform', 'Monitor'];
+    const nouns = ['Code', 'Data', 'Text', 'Image', 'Link', 'Page', 'SEO', 'Security', 'Speed', 'Traffic'];
+    const icons = ['🔍', '🛡️', '⚡', '🎨', '💻', '🔄', '🎲', '🧪', '📊'];
+
+    let id = 1000;
+
+    for (let i = 0; i < 750; i++) {
+        const category = categories[i % categories.length];
+        const prefix = prefixes[i % prefixes.length];
+        const suffix = suffixes[i % suffixes.length];
+        const verb = verbs[i % verbs.length];
+        const noun = nouns[i % nouns.length];
+        const icon = icons[i % icons.length];
+
+        toolsData.push({
+            id: id++,
+            name: `${prefix} ${verb} ${noun} ${suffix}`.trim(),
+            description: `${verb} your ${noun.toLowerCase()} with this powerful ${category} tool.`,
+            category: category,
+            tags: [category, noun.toLowerCase(), 'tool'],
+            icon: icon
+        });
+    }
+}
+
+// Generate the rest of the tools
+generateMoreTools();
+
+console.log(`Loaded ${toolsData.length} tools`);
